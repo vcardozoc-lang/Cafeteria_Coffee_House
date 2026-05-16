@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee House — Cafetería Artesanal</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ══════════════════════════
+       NAVBAR
+  ══════════════════════════════ -->
+  <nav class="navbar">
+    <a href="#inicio" class="navbar-logo">Coffee House</a>
+    <button class="navbar-toggle" onclick="toggleMenu()">☰</button>
+    <ul class="navbar-links" id="navbar-links">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#menu">Menú</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- ══════════════════════════
+       BANNER
+  ══════════════════════════════ -->
+  <div class="imagen-banner" id="inicio">
+    <img src="img/encabezado.png" alt="Banner Coffee House">
+  </div>
+
+  <!-- ══════════════════════════
+       SECCIÓN MENÚ
+  ══════════════════════════════ -->
+  <section class="menu" id="menu">
+    <h2>Nuestro Menú</h2>
+    <p class="menu-subtitulo">Hecho con amor y los mejores granos</p>
+
+    <!-- CATEGORÍA 1: Bebidas Calientes -->
+    <h3 class="categoria-titulo">Bebidas Calientes</h3>
+    <div class="menu-tarjetas">
+
+      <div class="tarjeta">
+        <div class="tarjeta-imagen">
+          <img src="img/espresso-clasico.png" alt="Espresso Clásico">
+        </div>
+        <div class="tarjeta-contenido">
+          <p>Un café intenso y aromático con cuerpo denso y crema dorada. El corazón de cada buen café.</p>
+          <span class="precio">$3.500 COP</span>
+        </div>
+      </div>
+
+      <div class="tarjeta">
+        <div class="tarjeta-imagen">
+          <img src="img/cafe-latte.png" alt="Café Latte">
+        </div>
+        <div class="tarjeta-contenido">
+          <p>Espresso suave mezclado con leche vaporizada y coronado con espuma cremosa.</p>
+          <span class="precio">$6.000 COP</span>
+        </div>
+      </div>
+
+      <div class="tarjeta">
+        <div class="tarjeta-imagen">
+          <img src="img/cappuccino.png" alt="Cappuccino">
+        </div>
+        <div class="tarjeta-contenido">
+          <p>Partes iguales de espresso, leche al vapor y espuma densa. Un clásico italiano.</p>
+          <span class="precio">$6.500 COP</span>
+        </div>
+      </div>
+
+      <div class="tarjeta">
+        <div class="tarjeta-imagen">
+          <img src="img/mocha.png" alt="Mocha">
+        </div>
+        <div class="tarjeta-contenido">
+          <p>La perfecta mezcla de espresso intenso con chocolate caliente y leche cremosa.</p>
+          <span class="precio">$7.000 COP</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- CATEGORÍA 2: Bebidas Frías -->
+    <h3 class="categoria-titulo">Bebidas Frías</h3>
+    <div class="menu-tarjetas">
+
+      <div class="tarjeta">
+        <div class="tarjeta-imagen">
+          <img src="img/cold-brew.png" alt="Cold Brew">
+        </div>
+        <div class="tarjeta-contenido">
+          <p>Café extraído en frío durante 12 horas. Suave, bajo en acidez y muy refrescante.</p>
+          <span class="precio">$7.000 COP</span>
+        </div>
+      </div>
+
+      <div class="tarjeta">
+        <div class="tarjeta-imagen">
+          <img src="img/frappuccino.png" alt="Frappuccino">
+        </div>
+        <div class="tarjeta-contenido">
+          <p>Mezcla helada de café, leche y hielo, coronada con crema batida y caramelo.</p>
+          <span class="precio">$8.000 COP</span>
+        </div>
+      </div>
+
+      <div class="tarjeta">
+        <div class="tarjeta-imagen">
+          <img src="img/limonada-de-coco.png" alt="Limonada de Coco">
+        </div>
+        <div class="tarjeta-contenido">
+          <p>Limonada fresca con leche de coco y un toque de menta. Perfecta para el calor.</p>
+          <span class="precio">$6.500 COP</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- CATEGORÍA 3: Para Comer -->
+    <h3 class="categoria-titulo">Para Comer</h3>
+    <div class="menu-tarjetas">
+
+      <div class="tarjeta">
+        <div class="tarjeta-imagen">
+          <img src="img/brownie-con-cafe.png" alt="Brownie con Café">
+        </div>
+        <div class="tarjeta-contenido">
+          <p>Brownie de chocolate oscuro acompañado de un shot de espresso caliente.</p>
+          <span class="precio">$8.500 COP</span>
+        </div>
+      </div>
+
+      <div class="tarjeta">
+        <div class="tarjeta-imagen">
+          <img src="img/croissant-de-mantequilla.png" alt="Croissant de Mantequilla">
+        </div>
+        <div class="tarjeta-contenido">
+          <p>Croissant hojaldrado y dorado, recién horneado cada mañana. Perfecto con tu café.</p>
+          <span class="precio">$5.000 COP</span>
+        </div>
+      </div>
+
+      <div class="tarjeta">
+        <div class="tarjeta-imagen">
+          <img src="img/muffin-arandanos.png" alt="Muffin de Arándanos">
+        </div>
+        <div class="tarjeta-contenido">
+          <p>Esponjoso muffin con arándanos frescos y cubierta crujiente de azúcar morena.</p>
+          <span class="precio">$5.500 COP</span>
+        </div>
+      </div>
+
+      <div class="tarjeta">
+        <div class="tarjeta-imagen">
+          <img src="img/sandwich-artesanal.png" alt="Sándwich Artesanal">
+        </div>
+        <div class="tarjeta-contenido">
+          <p>Pan ciabatta con pollo a las hierbas, queso crema, tomate y rúcula fresca.</p>
+          <span class="precio">$12.000 COP</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════
+       SECCIÓN CONTACTO
+  ══════════════════════════════ -->
+  <section class="contacto" id="contacto">
+    <h2>¿Tienes alguna pregunta?</h2>
+    <p>Reservas, pedidos especiales y eventos — estamos aquí para ti.</p>
+    <a href="coffeehouse@gmail.com" class="boton-contacto">Contáctanos</a>
+  </section>
+
+  <!-- ══════════════════════════
+       PIE DE PÁGINA
+  ══════════════════════════════ -->
+  <footer>
+    <p><strong>Coffee House</strong> — Cafetería Artesanal</p>
+    <p>Cali, Valle del Cauca &nbsp;·&nbsp; Colombia</p>
+    <p class="footer-autor">Autor: <strong>Valeria Cardozo Carmona — 2.º Semestre</strong></p>
+    <p>© 2024 Coffee House. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const links = document.getElementById('navbar-links');
+      links.classList.toggle('abierto');
+    }
+  </script>
+
+</body>
+</html>
